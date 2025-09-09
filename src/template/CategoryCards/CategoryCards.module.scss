@@ -1,0 +1,13 @@
+.category-cards-container {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.category-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+} 

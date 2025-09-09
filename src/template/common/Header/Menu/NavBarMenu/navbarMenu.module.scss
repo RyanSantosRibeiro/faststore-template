@@ -1,0 +1,96 @@
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &-fixed {
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+
+  &-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &-link {
+      font-family: var(--font-family-main);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-neutral-gray-800);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #8A3FFC; // Cor roxa do Mtech
+      }
+    }
+
+    &:hover {
+      > .sub-menu {
+        display: block;
+      }
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: var(--color-neutral-white);
+    border: 1px solid var(--color-neutral-gray-200);
+    border-top: 2px solid #8A3FFC; // Cor roxa do Mtech
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 16px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      &-item {
+        flex-basis: 30%;
+        
+        &-link {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--color-neutral-gray-800);
+          text-decoration: none;
+          transition: color 0.2s;
+
+          &:hover {
+            color: #8A3FFC; // Cor roxa do Mtech
+          }
+        }
+
+        &-internal-list {
+          margin-top: 8px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          &-link {
+            font-size: 14px;
+            color: var(--color-neutral-gray-700);
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+              color: #8A3FFC; // Cor roxa do Mtech
+            }
+          }
+        }
+      }
+    }
+  }
+}

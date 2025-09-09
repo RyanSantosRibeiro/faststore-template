@@ -1,0 +1,113 @@
+.header {
+  &-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-neutral-white);
+    border-bottom: 1px solid var(--color-neutral-gray-200);
+
+    @media (max-width: 675px) {
+      display: none;
+    }
+
+    &-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &-top {
+      background-color: #8A3FFC; // Cor roxa do Mtech
+      color: var(--color-neutral-white);
+      height: 40px;
+
+      &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+      }
+
+      &-left {
+        display: flex;
+        gap: 24px;
+      }
+
+      &-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-neutral-white);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    &-mid {
+      height: 80px;
+      background-color: var(--color-neutral-white);
+
+      &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+
+    &-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &-bottom {
+      height: 48px;
+      background-color: var(--color-neutral-white);
+      border-top: 1px solid var(--color-neutral-gray-200);
+      border-bottom: 1px solid var(--color-neutral-gray-200);
+
+      .container {
+        height: 100%;
+      }
+    }
+  }
+
+  &-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px var(--body-padding);
+    
+    @media (min-width: 675px) {
+      display: none;
+    }
+    
+    &-logo {
+      flex: 1;
+      padding-left: 26px;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: var(--body-max-width);
+  padding: 0 var(--body-padding);
+  margin: 0 auto;
+}

@@ -1,0 +1,7 @@
+type CollectionProductNameResponse {
+  productName: String
+}
+
+type Query {
+  getCollectionProductName(collectionId: String!): CollectionProductNameResponse
+}

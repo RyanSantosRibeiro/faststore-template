@@ -1,0 +1,28 @@
+.vitrine-title {
+  max-width: var(--container-width, 1200px);
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
+
+.vitrine-title-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+} 

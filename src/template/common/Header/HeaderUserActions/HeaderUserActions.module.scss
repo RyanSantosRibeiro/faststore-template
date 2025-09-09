@@ -1,0 +1,84 @@
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-neutral-gray-800);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #8A3FFC; // Cor roxa do Mtech
+    }
+  }
+
+  &-account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-greetings {
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-neutral-gray-900);
+      }
+
+      &-link {
+        font-size: 14px;
+        color: #8A3FFC; // Cor roxa do Mtech
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-wishlist {
+    display: flex;
+    align-items: center;
+    
+    &-text {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &-minicart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &-quantity {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 6px;
+      border-radius: 10px;
+      background-color: #8A3FFC; // Cor roxa do Mtech
+      color: var(--color-neutral-white);
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}

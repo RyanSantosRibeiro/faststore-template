@@ -1,0 +1,19 @@
+.component-example {
+  background-color: var(--color-primary-main);
+  &-container {
+    max-width: var(--body-max-width);
+    padding: var(--body-padding);
+    margin: 0 auto;
+    @include media(">phone") {
+      display: block;
+    }
+  }
+  &-title {
+    font-family: var(--font-family-main);
+    color: var(--color-neutral-black);
+  }
+  &-query-response {
+    font-family: var(--font-family-secondary);
+    color: var(--color-secondary-main);
+  }
+}

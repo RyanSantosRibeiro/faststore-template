@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ComponentExample",
+    "schema": {
+      "title": "Componente de pruebas",
+      "description": "Este es un componente para ser utilizado de base",
+      "type": "object",
+      "required": [],
+      "properties": {
+        "collectionId": {
+          "title": "Id de la collecion",
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "name": "TemplateHeader",
+    "schema": {
+      "title": "Template Header",
+      "description": "Header Component",
+      "type": "object",
+      "required": []
+    }
+  }
+]

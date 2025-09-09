@@ -1,0 +1,167 @@
+// ----------------------------------------------------------
+// GLOBAL TOKENS
+// Custom Theme
+// ----------------------------------------------------------
+
+// Custom fonts
+
+// @font-face {
+//   font-family: var(--font-family-primary);
+//   src: url("../assets/fonts/inter/Inter_28pt-Regular.ttf") format("truetype");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+@layer theme {
+  .no-scroll {
+    overflow: auto !important;
+    touch-action: unset !important;
+  }
+  .theme {
+    .no-scroll {
+      overflow: auto !important;
+      touch-action: unset !important;
+    }
+
+    // --------------------------------------------------------
+    // Colors (Branding Core)
+    // --------------------------------------------------------
+    --color-primary-main: #ffffff;
+    --color-primary-lighter: #ececec;
+
+    --color-secondary-main: #000000;
+    --color-secondary-lighter: #605752;
+
+    /* White Hat */
+    --color-neutral-white-20: #f8f7fc;
+    --color-neutral-white-10: #ffffff;
+    --color-neutral-white-30: #f6f1eb;
+    --color-neutral-white-40: #f7f7f7;
+    --color-neutral-white-50: #f6f6f6;
+    --color-neutral-white-60: #f2f2f2;
+    --color-neutral-white-70: #f0f0f0;
+    --color-neutral-white-80: #ececec;
+    --color-neutral-white-90: #dadada;
+    --color-neutral-white-100: #d9d9d9;
+    --color-neutral-white-110: #c8c8c8;
+
+    /* Grey */
+    --color-neutral-grey-10: #979899;
+    --color-neutral-grey-20: #949494;
+    --color-neutral-grey-30: #90968b;
+    --color-neutral-grey-40: #75787f;
+    --color-neutral-grey-50: #767676;
+    --color-neutral-grey-60: #757371;
+    --color-neutral-grey-70: #727273;
+    --color-neutral-grey-80: #5c5c5c;
+    --color-neutral-grey-90: #605752;
+    --color-neutral-grey-100: #5b5555;
+    --color-neutral-grey-110: #515151;
+    --color-neutral-grey-120: #4e4e4e;
+    --color-neutral-grey-130: #363533;
+    --color-neutral-grey-140: #f3f4f6;
+    --color-neutral-grey-150: #4b5563;
+    --color-neutral-grey-160: #1f2937;
+    --color-neutral-grey-170: #111827;
+    --color-neutral-grey-180: #484a4d;
+    --color-neutral-grey-190: #47484c;
+    --color-neutral-grey-200: #3f3f40;
+    --color-neutral-grey-210: #323845;
+
+    /* Black */
+    --color-neutral-black-10: #383838;
+    --color-neutral-black-20: #2d2d2d;
+    --color-neutral-black-30: #292929;
+    --color-neutral-black-40: #1b1b1b;
+    --color-neutral-black-50: #171a1c;
+    --color-neutral-black-60: #1f140f;
+    --color-neutral-black-70: #161616;
+    --color-neutral-black-80: #141415;
+    --color-neutral-black-90: #101010;
+    --color-neutral-black-100: #000000;
+
+    /* Blue */
+    --color-blue-10: #0062ff;
+    --color-blue-20: #0055ff;
+    --color-blue-30: #0f32e9;
+    --color-blue-40: #1b0b34;
+
+    /* Complementary Colors */
+    --color-complementary-10: #007c00;
+    --color-complementary-20: #1b1aff;
+    --color-complementary-30: #1b1aff;
+    --color-complementary-40: #1b1aff;
+
+    --color-support-1: #f6f1eb;
+    --color-support-2: #605752;
+    --color-support-3: #d8d8d8;
+    --color-support-4: #979899;
+    --color-support-5: #6c6c6c;
+    --color-support-6: #808080;
+    --color-support-7: #ff4c4c;
+    --color-support-8: #0000ee;
+    --color-support-9: #908d8b;
+    --color-support-10: #d2d2d2;
+    --color-support-11: #e3e4e6;
+
+    // --------------------------------------------------------
+    // Typography (Branding Core)
+    // --------------------------------------------------------
+    --font-family-main: "Inter", sans-serif;
+    --font-family-secondary: "Proxima Nova", sans-serif;
+
+    // --------------------------------------------------------
+    // Font Sizes
+    // --------------------------------------------------------
+    --font-size-xxs: 10px;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-20: 20px;
+    --font-size-21: 21px;
+    --font-size-xl: 24px;
+    --font-size-26: 26px;
+    --font-size-28: 28px;
+    --font-size-xxl: 32px;
+    --font-size-36: 36px;
+    --font-size-xxxl: 48px;
+
+    // --------------------------------------------------------
+    // Spacing (UI Essentials)
+    // --------------------------------------------------------
+
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+    --spacing-bottom-home-dekstop: 80px;
+    --spacing-bottom-home-mobile: 80px;
+    --spacing-bottom-header-dekstop: 195px;
+    --spacing-bottom-header-mobile: 114px;
+
+    // --------------------------------------------------------
+    // Grid & Layout (UI Essentials)
+    // --------------------------------------------------------
+    --body-max-width: 1440px;
+    --body-content-width: 1024px;
+    --body-padding: 16px;
+    --container-padding: 24px;
+    --grid-gap: 16px;
+    --mb-desk: 80px;
+    --mb-mobile: 40px;
+    // --------------------------------------------------------
+    // Interactive Controls (UI Essentials)
+    // --------------------------------------------------------
+    --transition: all 0.3s ease-in-out;
+    // --------------------------------------------------------
+    // Refinements
+    // --------------------------------------------------------
+    --box-shadow-light: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-medium: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-dark: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    // --------------------------------------------------------
+    // FS UI Components
+    // --------------------------------------------------------
+    // Add here the customizations for FastStore UI components.
+  }
+}
